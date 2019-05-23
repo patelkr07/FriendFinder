@@ -6,6 +6,23 @@ var app = express();
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
+var friends = [
+    {
+        name: "Jacob",
+        score: 89
+    },
+
+    {
+        name: "Jessica",
+        score: 35
+    },
+
+    {
+        name: "Paul",
+        score: 19
+    }
+]
+
 app.get("/api/friends", function(req, res) {
     return res.json(friends);
 });
