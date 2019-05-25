@@ -3,13 +3,17 @@ var path = require("path");
 
 var app = express();
 
+module.exports = function(app) {
+
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
-app.get("/", function(req, res) {
+app.get("/home.html", function(req, res) {
     res.sendFile(path.join(__dirname, "./home.html"));
-})
+});
 
-app.get("/survey", function(req, res) {
+app.get("/survey.html", function(req, res) {
     res.sendFile(path.join(__dirname, "./survey.html"));
-})
+});
+
+}

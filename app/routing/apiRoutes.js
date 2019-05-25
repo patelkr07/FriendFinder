@@ -1,7 +1,10 @@
+
 var express = require("express");
 var path = require("path");
 
 var app = express();
+
+module.exports = function(app) {
 
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
@@ -53,3 +56,5 @@ app.post("/api/friends", function (req, res) {
 
     res.send(body)
 });
+
+}

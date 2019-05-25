@@ -21,5 +21,6 @@
   "dependencies": {
     "express": "^4.17.0",
     "node": "^12.2.0"
-  }
+  },
+  "devDependencies": {}
 }
