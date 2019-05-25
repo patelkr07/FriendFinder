@@ -8,7 +8,7 @@ module.exports = function(app) {
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
-app.get("/home.html", function(req, res) {
+app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/home.html"));
 });
 
