@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/patelkr07/FriendFinder#readme",
   "dependencies": {
-    "express": "^4.17.0",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "node": "^12.2.0"
   },
